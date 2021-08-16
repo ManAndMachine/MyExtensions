@@ -33,20 +33,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autodesk.iLogic.Automation">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Automation.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Automation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.iLogic.Common">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Common.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Common.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.iLogic.Interfaces">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Interfaces.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Inventor 2022\Bin\Autodesk.iLogic.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Autodesk.Inventor.Interop, Version=26.1.0.0, Culture=neutral, PublicKeyToken=d84147f8b4276564, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Inventor 2022\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Inventor 2022\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
