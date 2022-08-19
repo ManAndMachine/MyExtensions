@@ -139,11 +139,11 @@ namespace DumpiLogicRules
 			// Loop through all referenced docs in assembly
 			AssemblyDocument assyDoc = (AssemblyDocument)oDoc;
 			AssemblyComponentDefinition asmCompDef = assyDoc.ComponentDefinition;
-			LevelOfDetailRepresentation currentLoD = asmCompDef.RepresentationsManager.ActiveLevelOfDetailRepresentation;
-			//need to set the level of detail to Master and then back to whatever it was!
+			ModelState currentLoD = asmCompDef.ModelStates.ActiveModelState;
+			//need to set the ModelState to [Primary] and then back to whatever it was!
 			ProcessFiles.UpdateStatusBar("Beginning iLogic Rules Dump");
 
-			asmCompDef.RepresentationsManager.LevelOfDetailRepresentations["Master"].Activate();
+			asmCompDef.ModelStates[1].Activate();
 
 			double percent = 0;
 			int rulesInt = 0;
@@ -157,7 +157,7 @@ namespace DumpiLogicRules
 				rulesInt += 1;
 			}
 			//should be the "iLogic" level of detail that we need to reactivate here:
-			asmCompDef.RepresentationsManager.LevelOfDetailRepresentations[currentLoD.Name].Activate();
+			asmCompDef.ModelStates[currentLoD.Name].Activate();
 		}
 
 		/// <summary>
